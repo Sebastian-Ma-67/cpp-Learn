@@ -17,7 +17,7 @@ public:
         cout << "析构函数调用" << endl;
     }
     int m_age;
-    int *
+   // int *
 };
 
 void test01()
