@@ -99,15 +99,15 @@ void test03()
     // s3.m_A;访问不了
 }
 
-class Grand1 :public Son3
+class Grand1 : public Son3
 {
-    public:
+public:
     void func()
 
-{
-    // m_A = 100; 访问不了
-
-}}
+    {
+        // m_A = 100; 访问不了
+    }
+};
 int main()
 {
     return 0;
