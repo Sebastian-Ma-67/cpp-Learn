@@ -8,6 +8,10 @@ public:
     {
         std::cout << "this is func in Base" << std::endl;
     }
+    static void func(int a)
+    {
+        std::cout << "this is func(a) in Base" << std::endl;
+    }
 };
 
 int Base::m_A = 100;
@@ -41,6 +45,7 @@ void test01()
 
     Son::func();
     Son::Base::func();
+    Son::Base::func(100);
 }
 
 int main()
