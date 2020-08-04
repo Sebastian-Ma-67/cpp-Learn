@@ -23,6 +23,7 @@ class Animal
 {
 public:
     virtual void speak() //虚函数
+    //void speak() //虚函数
     {
         cout << "animal is talking!" << endl;
     }
@@ -42,10 +43,21 @@ class Dog : public Animal
 {
 
 public:
-//子类要重写父类中的虚函数
-    void speak()
+    //子类要重写父类中的虚函数
+    void speak() //非静态成员函数，不属于类的对象，和类是分开存储的
     {
         cout << "little dog is talking!" << endl;
+    }
+};
+
+class Pig : public Animal
+{
+
+public:
+    //子类要重写父类中的虚函数
+    void speak() //非静态成员函数，不属于类的对象，和类是分开存储的
+    {
+        cout << "little pig is talking!" << endl;
     }
 };
 
@@ -65,8 +77,15 @@ void test01()
     doSpeak(dog);
 }
 
+void test02()
+{
+    cout << "size of animal = " << sizeof(Animal) << endl; //空类的大小为1
+    // 64操作系统的指针变量长度为8
+}
+
 int main()
 {
-    test01();
+    //test01() ;
+    test02();
     return 0;
 }
