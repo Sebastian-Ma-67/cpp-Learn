@@ -13,3 +13,4 @@ add_executable(ModelWash src/Astar.cpp src/clipper.cpp src/clipper_demo.cpp src/
 #add_definition("-Wall -g")
 #添加依赖
 add_dependencies(target-name depend-target1 depend-target2 ...)
+
