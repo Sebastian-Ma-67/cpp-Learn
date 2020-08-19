@@ -56,5 +56,6 @@
         "memory_resource": "cpp",
         "optional": "cpp",
         "string_view": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/职工管理系统"
 }
